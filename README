@@ -1,0 +1,16 @@
+This program compares two files that are given as inputs and as an output shows the differences that these files may have. The program is written in C and can be compiled via the MAKEFILE that I created and is contained in the folder. This program uses the MD5 message-digest algorithm for encryption and binary trees for the compare.
+
+At the beggining the program reads the first file and depending on the page-size(int) that has been given as input it creates a digest for every part of the file. Two additional methods have been created so that every node of the tree has its own digest according to its children nodes' digest. These are check() which is responsible for the nodes with 2 children and lastcheck() which checks the nodes that have 1 child node (if there are any). The same procedure takes place for the second file and then the compare function finds the differences between the 2 files.
+
+Every node has:
+-2 children nodes initialized as NULL (in case its a leaf node)
+-digest (unsigned int)
+-Done (int , Done =1 if digest has been calculated, Done =0 if digest has not been calculated yet)
+-Page (page that digest has been computed of. Page=0 if node is not leaf)
+-Level (height of the node)
+
+*there are two test files included in the folder a.txt and b.txt
+
+how to run:
+$ make
+$ filesync [file1] [file2] [page-size]
