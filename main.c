@@ -12,7 +12,6 @@ unsigned int mess_dig[4],mess2_dig[4];
 MD5_CTX context;
 treeptr riz1,cur1,riz2,cur2,elegxos,del1,del2;
 
-tree_fan_out=atoi(argv[4]); /*den katafera na to ulopoihsw me >2*/
 
 fp1 = fopen(argv[1],"rb");
 if(fp1 == NULL){
