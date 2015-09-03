@@ -19,4 +19,4 @@ Every node has:
 
 how to run:
 $ make
-$ filesync [file1] [file2] [page-size]
+$ ./filesync [file1] [file2] [page-size]
